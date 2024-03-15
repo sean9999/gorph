@@ -1,0 +1,5 @@
+alias l='ls'
+alias df='du'
+alias noodle='fortune'
+alias krazy='cmatrix'
+alias wow='id'
