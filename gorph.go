@@ -115,6 +115,7 @@ func (g *gorph) Walk() ([]string, error) {
 	pattern := g.Pattern()
 
 	var fn fs.WalkDirFunc = func(path string, d fs.DirEntry, err error) error {
+
 		itMatches, _ := doublestar.PathMatch(pattern, path)
 		if itMatches {
 			paths = append(paths, path)
