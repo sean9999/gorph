@@ -8,6 +8,10 @@ github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
+github.com/sean9999/go-flargs v1.3.2 h1:p+Ae5TMMGmIR8OjwlivzNpA+wMNSGk+yjrJJ9atzVgY=
+github.com/sean9999/go-flargs v1.3.2/go.mod h1:uFPr2vtYoHLEJU2fn/u4jXk7A2j8Xag8Uyn2kbcVYd8=
+github.com/sean9999/go-real-fs v0.0.2 h1:phBSL8Cl7ZeCKDAHBBd1gURxvWD6PWZbTx9WrodqVYk=
+github.com/sean9999/go-real-fs v0.0.2/go.mod h1:+PveClop1ifLdZ6ix76EXlrBFMDNis4aaepNpqGCLgQ=
 github.com/spf13/cobra v1.8.1 h1:e5/vxKd/rZsfSJMUX1agtjeTDf+qv1/JdBF8gg5k9ZM=
 github.com/spf13/cobra v1.8.1/go.mod h1:wHxEcudfqmLYa8iTfL+OuZPbBZkmvliBWKIezN3kD9Y=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=

@@ -1,9 +1,10 @@
 package main
 
-import (
-	"github.com/sean9999/gorph/cmd"
-)
+import "os"
 
 func main() {
-	cmd.Execute()
+	err := rootCmd.Execute()
+	if err != nil {
+		os.Exit(1)
+	}
 }
