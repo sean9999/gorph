@@ -17,10 +17,11 @@ const (
 	FolderMoved
 	FolderModified
 	FolderUnknown
+	TimeToDie
 )
 
 func (gop GorphOp) String() string {
-	return []string{"UndefinedOp", "FsNotifyEvent", "FolderAdded", "FolderRemoved", "FolderRenamed", "FolderMoved", "FolderModified", "FolderUnknown"}[gop]
+	return []string{"UndefinedOp", "FsNotifyEvent", "FolderAdded", "FolderRemoved", "FolderRenamed", "FolderMoved", "FolderModified", "FolderUnknown", "TimeToDie"}[gop]
 }
 
 type GorphEvent struct {

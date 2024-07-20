@@ -61,7 +61,7 @@ func TestNewGorph_Walk(t *testing.T) {
 		wantErr bool
 	}{
 		{name: "Videos", args: args{root: "testdata/Videos", back: os.DirFS("testdata/Videos"), pattern: "*"}, want: VIDEOS, wantErr: false},
-		{name: "Downloads", args: args{root: "testdata/Downloads", back: os.DirFS("testdata/Downloads"), pattern: "*"}, want: DOWNLOADS, wantErr: false},
+		{name: "Downloads", args: args{root: "testdata/Downloads", back: os.DirFS("testdata/Downloads"), pattern: "**"}, want: DOWNLOADS, wantErr: false},
 		{name: "folder that doesn't exist", args: args{root: "x", back: os.DirFS("x"), pattern: "*"}, want: []string{""}, wantErr: true},
 		{name: "go.mod", args: args{root: "go.mod", back: os.DirFS("go.mod"), pattern: "*"}, want: []string{""}, wantErr: true},
 	}
@@ -86,7 +86,7 @@ func TestNewGorph_Walk(t *testing.T) {
 func TestNewGorph_Glob(t *testing.T) {
 	var VIDEOS = []string{"VID_1.mp4", "VID_2.mp4", "waiting-for-mommy.mov"}
 	var JUST_NODE = []string{"node"}
-	var DOWNLOADS = []string{"node", "node/node-v20.11.0-linux-x64.tar.xz"}
+	var DOWNLOADS = []string{".", "node", "node/node-v20.11.0-linux-x64.tar.xz"}
 	var DOWNLOADS_ROOTED = []string{"Downloads", "Downloads/node", "Downloads/node/node-v20.11.0-linux-x64.tar.xz"}
 	var MOMMY = []string{"Documents/the-mommy-book.txt", "Pictures/mommy-and-me.jpeg", "Videos/waiting-for-mommy.mov"}
 
