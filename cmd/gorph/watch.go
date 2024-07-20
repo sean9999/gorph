@@ -58,7 +58,7 @@ func output(gev gorph.GorphEvent, opts outputOptions) string {
 
 }
 
-func main() {
+func watch() {
 	g, err := gorph.NewGorph("testdata", "*", os.DirFS("testdata"))
 	if err != nil {
 		panic(err)
